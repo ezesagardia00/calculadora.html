@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="total">
+        
+        <div id="botones">
+            <div>
+                <button v-on:click="boton('1')">1</button>
+                <button v-on:click="boton('2')">2</button>
+                <button v-on:click="boton('3')">3</button>
+                <button v-on:click="boton('+')">+</button>
+            </div>
+            <div>
+                <button v-on:click="boton('4')">4</button>
+                <button v-on:click="boton('5')">5</button>
+                <button v-on:click="boton('6')">6</button>
+                <button v-on:click="boton('-')">-</button>
+            </div>
+            <div>
+                <button v-on:click="boton('7')">7</button>
+                <button v-on:click="boton('8')">8</button>
+                <button v-on:click="boton('9')">9</button>
+                <button v-on:click="boton('*')">*</button>
+            </div>
+            <div>
+                <button v-on:click="boton('0')">0</button>
+                <button v-on:click="boton('/')">/</button>
+                <button v-on:click="equals()">=</button>
+                <button v-on:click="boton('.')">.</button>
+            </div>
+            <div>
+                <button v-on:click="clear()">Clear</button>
+            </div>
+        </div>
+        
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
